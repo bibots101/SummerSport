@@ -1,0 +1,23 @@
+<app-banner [title]="'Edit Team'"></app-banner>
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12"> 
+            <form #editTeamForm="ngForm" (ngSubmit) = "editTeam()">
+                <div class="form-group">
+                  <input type="text" class="form-control" [(ngModel)]="findedTeam.name" name="a" placeholder="Team Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" [(ngModel)]="findedTeam.foundation" placeholder="Team Foundation" name="b">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" [(ngModel)]="findedTeam.stadium" placeholder="Team Stadium" name="c">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary py-3 px-5" value="Update Team" name="e">
+                </div>
+              </form>   
+        </div>
+      </div>
+    </div>
+</div>
